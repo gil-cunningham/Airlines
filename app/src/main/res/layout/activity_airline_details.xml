@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/airline_details_content_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/airline_details_header_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/airline_details_header"
+            style="@style/AirlineDetailsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/airline_details_header_height"
+            android:src="@drawable/airlines_icon" />
+
+        <TextView
+            android:id="@+id/airline_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airline_details_header"
+            style="@style/AirlineDetailsToolbarHeader" />
+
+        <RelativeLayout
+            android:id="@+id/airline_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/airline_name"
+            android:background="@color/airline_details_content_bg"
+            android:padding="@dimen/airline_details_padding">
+
+            <TextView
+                android:id="@+id/airline_website_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="@string/airline_website_text"
+                style="@style/AirlineDetailsText" />
+
+            <TextView
+                android:id="@+id/airline_website"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/airline_website_text"
+                style="@style/AirlineDetailsValue" />
+
+            <TextView
+                android:id="@+id/airline_phonenum_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/airline_website"
+                android:text="@string/airline_phonenum_text"
+                style="@style/AirlineDetailsText" />
+
+            <TextView
+                android:id="@+id/airline_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/airline_phonenum_text"
+                style="@style/AirlineDetailsValue" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-6dp"
+                android:layout_below="@id/airline_phonenum">
+
+                <CheckBox
+                    android:id="@+id/airline_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/airline_favorite_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@id/airline_phonenum"
+                    android:text="@string/airline_favorite_text"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.Light" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            style="@style/AirlineDetailsToolbar" >
+
+            <RelativeLayout
+                android:id="@+id/image_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/airline_details_header_height">
+
+                <ImageView
+                    android:id="@+id/toolbar_header_img"
+                    android:src="@drawable/airlines_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/airline_details_header_height"
+                    style="@style/AirlineDetailsToolbarImage" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:id="@+id/back_btn"
+                        android:src="@drawable/back"
+                        android:onClick="doFinish"
+                        style="@style/AirlineDetailsToolbarBack" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+

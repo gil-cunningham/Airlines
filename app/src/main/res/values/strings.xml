@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Airlines</string>
+
+    <string name="tab_airlines">AIRLINES</string>
+    <string name="tab_favorites">FAVORITES</string>
+
+    <string name="airline_website_none">None</string>
+    <string name="airline_phonenum_none">None</string>
+
+    <string name="airline_website_text">Website:</string>
+    <string name="airline_phonenum_text">Phone Number:</string>
+    <string name="airline_favorite_text">Favorite</string>
+
+    <string name="empty_list">- empty -</string>
+
+</resources>

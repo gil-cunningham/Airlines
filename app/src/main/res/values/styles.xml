@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetRight">0dp</item>
+    </style>
+
+    <!-- Splash -->
+    <style name="SplashThemeText">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/splash_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <!-- Airlines -->
+    <style name="AirlinesTabLayout" parent="Widget.Design.TabLayout">
+        <item name="android:background">@color/airlines_tabs_bg</item>
+        <item name="tabIndicatorColor">@color/airlines_tabs_indicator</item>
+        <item name="tabSelectedTextColor">@color/airlines_tabs_selected_text</item>
+    </style>
+
+    <style name="AirlinesTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/airlines_tabs_unselected_text</item>
+    </style>
+
+    <style name="AirlineCardView">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Airline Details -->
+    <style name="AirlineDetailsHeader">
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:background">@color/airline_details_header_bg</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="AirlineDetailsToolbar">
+        <item name="android:background">@color/airline_details_toolbar_bg</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="AirlineDetailsToolbarImage">
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginEnd">00dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="AirlineDetailsToolbarBack">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:tint">#000000</item>
+    </style>
+
+    <style name="AirlineDetailsToolbarHeader">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/airline_details_header_bg</item>
+        <item name="android:textColor">@color/airline_details_toolbar_text</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AirlineDetailsText">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="AirlineDetailsValue">
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:textColorLink">#2f6699</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="EmptyList">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+</resources>

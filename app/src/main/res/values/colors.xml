@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Splash -->
+    <color name="splash_bg">#FFFFFF</color>
+    <color name="splash_text">#505050</color>
+
+    <!-- Airlines -->
+    <color name="airlines_tabs_bg">#EAF0F5</color>
+    <color name="airlines_tabs_indicator">#2E96EF</color>
+    <color name="airlines_tabs_selected_text">#2E96EF</color>
+    <color name="airlines_tabs_unselected_text">#ABB9CB</color>
+    <color name="airlines_listitem">#F2F2F2</color>
+
+    <!-- Airlines Details -->
+    <color name="airline_details_header_bg">#2E96EF</color>
+    <color name="airline_details_authordate_text">#B8B8B8</color>
+    <color name="airline_details_content_bg">#FFFFFF</color>
+    <color name="airline_details_toolbar_bg">#2E96EF</color>
+    <color name="airline_details_toolbar_text">#FFFFFF</color>
+
+</resources>
